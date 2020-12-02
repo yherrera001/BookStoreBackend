@@ -47,7 +47,7 @@ public class BookService {
         return new ArrayList<>(booksRepo.findAll());
     }
 
-    public Books getBookByName(String title){
+    public List<Books> getBookByName(String title){
         return booksRepo.getBooksByTitle(title);
     }
 }

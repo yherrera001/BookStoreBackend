@@ -40,7 +40,7 @@ public class BookController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/books/title")
-    public Books getBookByTitle(@RequestParam(name = "title") String title){
+    public List<Books> getBookByTitle(@RequestParam(name = "title") String title){
         return bookService.getBookByName(title);
     }
 }
